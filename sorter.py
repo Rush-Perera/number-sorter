@@ -7,7 +7,6 @@ client = MongoClient()  # Connect to the default MongoDB Server
 db = client['rainbowpages']  # Get a database named 'rainbowpages'
 collection = db['entertainment'] 
 
-
 items = collection.find()
 new_items = []
 for item in items:
