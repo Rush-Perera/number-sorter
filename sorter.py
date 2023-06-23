@@ -3,8 +3,7 @@ from pymongo import MongoClient
 import pandas as pd
 import csv
 
-
-client = MongoClient()  # Connect to the default MongoDB server
+client = MongoClient()  # Connect to the default MongoDB Server
 db = client['rainbowpages']  # Get a database named 'rainbowpages'
 collection = db['entertainment'] 
 
