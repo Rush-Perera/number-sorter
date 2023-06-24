@@ -23,13 +23,13 @@ for item in items:
     except KeyError:
         pass
 
-with open('numbers-entertainment.csv', 'w', newline='') as f:
+with open('numbers-entertainment-mobitel.csv', 'w', newline='') as f:
   fieldnames = ['number']
   writer = csv.DictWriter(f, fieldnames=fieldnames)
   writer.writeheader()
 
   for new_item in new_items:
-      if new_item.startswith('07') or new_item.startswith('7'):
+      if new_item.startswith('071') or new_item.startswith('71') or new_item.startswith('070') or new_item.startswith('70'):
         print(new_item)
         writer.writerow({'number': new_item})
 
